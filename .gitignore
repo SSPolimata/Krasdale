@@ -1,0 +1,20 @@
+# Entornos virtuales
+.venv/
+venv/
+
+# Archivos de configuración de usuario
+*.env
+.env.*
+
+# Secretos de Streamlit
+.streamlit/secrets.toml
+
+# Archivos de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
