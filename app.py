@@ -161,7 +161,7 @@ def main():
             if uploaded_file.name.endswith('.xlsx'):
                 df = pd.read_excel(uploaded_file, header=None)
             elif uploaded_file.name.endswith('.csv'):
-                df = pd.read_csv(uploaded_file, header=None)
+                df = pd.read_csv(uploaded_file, header=None, on_bad_lines='skip')
             col_names = excel_column_names(df.shape[1])
             df.columns = col_names
             # Formatear columna J a 5 dígitos con ceros a la izquierda
